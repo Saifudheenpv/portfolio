@@ -1,31 +1,34 @@
-# Personal Portfolio Website
+# DevOps Portfolio
 
-A modern, responsive portfolio website built with Flask, featuring smooth animations, dark mode support, and a clean design.
+A modern portfolio website showcasing DevOps and Cloud expertise, built with Flask and deployed using CI/CD pipelines.
 
 ## 🌟 Features
 
 - Responsive design that works on all devices
 - Dark mode support
 - Smooth animations and transitions
-- Project showcase section
-- Skills display
+- DevOps project showcase
+- Technical skills display
 - Contact information
 - Modern UI with CSS animations
 - SEO friendly
+- Automated CI/CD pipeline
 
 ## 🛠️ Technologies Used
 
 - **Backend**: Python, Flask
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Deployment**: Render
+- **DevOps**: Docker, GitHub Actions, Render
+- **Cloud**: AWS, Azure, GCP
 - **Version Control**: Git, GitHub
-- **CI/CD**: GitHub Actions
+- **CI/CD**: GitHub Actions, Jenkins
 
 ## 📋 Prerequisites
 
 - Python 3.8 or higher
 - pip (Python package installer)
 - Git
+- Docker (optional, for local containerization)
 
 ## 🚀 Installation Steps
 
@@ -64,6 +67,8 @@ portfolio/
 ├── app.py              # Main Flask application
 ├── requirements.txt    # Python dependencies
 ├── Procfile           # For deployment on Render
+├── .github/           # GitHub Actions workflows
+│   └── workflows/     # CI/CD pipeline configurations
 ├── static/
 │   ├── css/
 │   │   └── style.css  # Main stylesheet
@@ -76,7 +81,7 @@ portfolio/
 
 ## 🚀 Deployment
 
-This project is deployed on Render. To deploy your own version:
+This project is deployed on Render using a CI/CD pipeline. To deploy your own version:
 
 1. Fork this repository
 2. Create a new Web Service on Render
@@ -84,6 +89,14 @@ This project is deployed on Render. To deploy your own version:
 4. Use the following settings:
    - Build Command: `pip install -r requirements.txt`
    - Start Command: `gunicorn app:app`
+
+## 🔄 CI/CD Pipeline
+
+The project uses GitHub Actions for continuous integration and deployment:
+- Automated testing
+- Code quality checks
+- Automatic deployment to Render
+- Docker containerization
 
 ## 🎨 Customization
 
@@ -115,4 +128,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - Font Awesome for icons
 - Google Fonts for typography
-- Unsplash for stock images 
+- Unsplash for stock images
+- GitHub Actions for CI/CD
+- Render for hosting 

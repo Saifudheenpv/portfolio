@@ -5,30 +5,30 @@ app = Flask(__name__)
 # Projects data
 projects = [
     {
-        "name": "Portfolio Website",
-        "description": "A modern, responsive portfolio built with Flask and modern CSS, featuring smooth animations and dark mode support",
-        "technologies": ["Python", "Flask", "HTML5", "CSS3", "JavaScript"],
+        "name": "Portfolio Website with CI/CD",
+        "description": "A modern portfolio website with automated CI/CD pipeline using GitHub Actions and Render deployment",
+        "technologies": ["Python", "Flask", "GitHub Actions", "Docker", "Render"],
         "image": "portfolio.jpg",
         "github": "https://github.com/Saifudheenpv/portfolio",
-        "live": "https://your-portfolio.onrender.com"
+        "live": "https://portfolio-wd3b.onrender.com"
     },
     {
-        "name": "CI/CD Pipeline",
-        "description": "Automated deployment pipeline using GitHub Actions and Render, implementing continuous integration and deployment",
-        "technologies": ["GitHub Actions", "Python", "Docker", "Render"],
+        "name": "DevOps Pipeline Automation",
+        "description": "Automated CI/CD pipeline implementation with GitHub Actions, Docker containerization, and cloud deployment",
+        "technologies": ["GitHub Actions", "Docker", "Python", "AWS", "Jenkins"],
         "image": "cicd.jpg",
-        "github": "https://github.com/Saifudheenpv/portfolio",
-        "live": "https://your-portfolio.onrender.com"
+        "github": "https://github.com/Saifudheenpv/flask-ci-cd",
+        "live": "https://flask-ci-cd.onrender.com"
     }
 ]
 
 # Skills data
 skills = {
-    "languages": ["Python", "JavaScript", "HTML5", "CSS3", "Shell Scripting"],
-    "frameworks": ["Flask", "Django", "React", "Bootstrap"],
-    "tools": ["Git", "GitHub", "VS Code", "Docker", "Jenkins"],
-    "cloud": ["AWS", "Azure", "Google Cloud"],
-    "databases": ["SQLite", "MongoDB", "PostgreSQL"]
+    "DevOps Tools": ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "GitLab CI"],
+    "Cloud Platforms": ["AWS", "Azure", "Google Cloud", "DigitalOcean"],
+    "Programming": ["Python", "Shell Scripting", "JavaScript", "HTML/CSS"],
+    "Infrastructure": ["Terraform", "Ansible", "Puppet", "Chef"],
+    "Monitoring": ["Prometheus", "Grafana", "ELK Stack", "Nagios"]
 }
 
 @app.route('/')
